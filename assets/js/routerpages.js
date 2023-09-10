@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function() {
     scriptEl.setAttribute("type", "text/javascript")
 
 
-    if(currentPage === './index.html') {
+    if(currentPage === '/index.html') {
         scriptPath = "./assets/js/indexpage.min.js"
 
         scriptEl.setAttribute("src", scriptPath)
@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
         document.getElementsByTagName("body")[0].appendChild(scriptEl)
 
-    }else if(currentPage === './') {
+    }else if(currentPage === '/') {
         scriptPath = "./assets/js/indexpage.min.js"
 
         scriptEl.setAttribute("src", scriptPath)
