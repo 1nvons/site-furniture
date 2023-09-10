@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.min.css"><meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="email=no">
+    <link rel="icon" href="./assets/images/logoheader.svg">
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="arrow-top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.6568 8.96219L16.2393 10.3731L12.9843 7.10285L12.9706 20.7079L10.9706 20.7059L10.9843 7.13806L7.75404 10.3532L6.34314 8.93572L12.0132 3.29211L17.6568 8.96219Z" fill="currentColor"/>
+</svg>
+    </div>
+    <header class="header"> 
+      <div class="container"> 
+        <div class="header__inner"> 
+          <div class="header-up">
+            <div class="header-up__logo"><a class="logo" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 38C29.4934 38 38 29.4934 38 19C38 8.50659 29.4934 0 19 0C8.50659 0 0 8.50659 0 19C0 29.4934 8.50659 38 19 38ZM11.741 27.3L13.742 22.602H23.892L25.922 27.3H29.866L20.702 7H16.99L7.85498 27.3H11.741ZM18.817 10.77L22.645 19.644H15.018L18.817 10.77Z" fill="#B17955"/>
+</svg>
+<svg class="logo--none" width="94" height="22" viewBox="0 0 94 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.86 16.14H6.36002L4.29002 21H0.27002L9.72002 0H13.56L23.04 21H18.96L16.86 16.14ZM15.57 13.08L11.61 3.9L7.68002 13.08H15.57Z" fill="#B17955"/>
+<path d="M25.8403 4.98H29.5903V11.49H37.6603V4.98H41.4103V21H37.6603V14.67H29.5903V21H25.8403V4.98Z" fill="#B17955"/>
+<path d="M52.406 4.8C54.766 4.8 56.566 5.37 57.806 6.51C59.066 7.63 59.696 9.33 59.696 11.61V21H56.156V19.05C55.696 19.75 55.036 20.29 54.176 20.67C53.336 21.03 52.316 21.21 51.116 21.21C49.916 21.21 48.866 21.01 47.966 20.61C47.066 20.19 46.366 19.62 45.866 18.9C45.386 18.16 45.146 17.33 45.146 16.41C45.146 14.97 45.676 13.82 46.736 12.96C47.816 12.08 49.506 11.64 51.806 11.64H55.946V11.4C55.946 10.28 55.606 9.42 54.926 8.82C54.266 8.22 53.276 7.92 51.956 7.92C51.056 7.92 50.166 8.06 49.286 8.34C48.426 8.62 47.696 9.01 47.096 9.51L45.626 6.78C46.466 6.14 47.476 5.65 48.656 5.31C49.836 4.97 51.086 4.8 52.406 4.8ZM51.896 18.48C52.836 18.48 53.666 18.27 54.386 17.85C55.126 17.41 55.646 16.79 55.946 15.99V14.13H52.076C49.916 14.13 48.836 14.84 48.836 16.26C48.836 16.94 49.106 17.48 49.646 17.88C50.186 18.28 50.936 18.48 51.896 18.48Z" fill="#B17955"/>
+<path d="M77.0264 8.16H71.4164V21H67.6664V8.16H62.0264V4.98H77.0264V8.16Z" fill="#B17955"/>
+<path d="M85.7166 4.8C88.0766 4.8 89.8766 5.37 91.1166 6.51C92.3766 7.63 93.0066 9.33 93.0066 11.61V21H89.4666V19.05C89.0066 19.75 88.3466 20.29 87.4866 20.67C86.6466 21.03 85.6266 21.21 84.4266 21.21C83.2266 21.21 82.1766 21.01 81.2766 20.61C80.3766 20.19 79.6766 19.62 79.1766 18.9C78.6966 18.16 78.4566 17.33 78.4566 16.41C78.4566 14.97 78.9866 13.82 80.0466 12.96C81.1266 12.08 82.8166 11.64 85.1166 11.64H89.2566V11.4C89.2566 10.28 88.9166 9.42 88.2366 8.82C87.5766 8.22 86.5866 7.92 85.2666 7.92C84.3666 7.92 83.4766 8.06 82.5966 8.34C81.7366 8.62 81.0066 9.01 80.4066 9.51L78.9366 6.78C79.7766 6.14 80.7866 5.65 81.9666 5.31C83.1466 4.97 84.3966 4.8 85.7166 4.8ZM85.2066 18.48C86.1466 18.48 86.9766 18.27 87.6966 17.85C88.4366 17.41 88.9566 16.79 89.2566 15.99V14.13H85.3866C83.2266 14.13 82.1466 14.84 82.1466 16.26C82.1466 16.94 82.4166 17.48 82.9566 17.88C83.4966 18.28 84.2466 18.48 85.2066 18.48Z" fill="#B17955"/>
+</svg>
+<svg class="logo--none" xmlns="http://www.w3.org/2000/svg" width="118" height="28" viewBox="0 0 118 28" fill="none">
+<path d="M0.417969 11.43H15.418V13.89H0.417969V11.43Z" fill="black"/>
+<path d="M34.389 12.15H30.489V21H26.649V0H30.489V8.79H34.509L40.539 0H44.679L37.509 10.17L44.949 21H40.539L34.389 12.15Z" fill="black"/>
+<path d="M62.0912 4.98L54.5912 22.29C53.8912 24.03 53.0412 25.25 52.0412 25.95C51.0412 26.67 49.8312 27.03 48.4112 27.03C47.6112 27.03 46.8212 26.9 46.0412 26.64C45.2612 26.38 44.6212 26.02 44.1212 25.56L45.6212 22.8C45.9812 23.14 46.4012 23.41 46.8812 23.61C47.3812 23.81 47.8812 23.91 48.3812 23.91C49.0412 23.91 49.5812 23.74 50.0012 23.4C50.4412 23.06 50.8412 22.49 51.2012 21.69L51.4712 21.06L44.4812 4.98H48.3812L53.4212 16.83L58.4912 4.98H62.0912Z" fill="black"/>
+<path d="M73.8076 21L69.6976 15.45L65.5576 21H61.4176L67.6576 12.87L61.6876 4.98H65.8576L69.7876 10.23L73.7176 4.98H77.7676L71.7676 12.81L78.0376 21H73.8076Z" fill="black"/>
+<path d="M80.7212 4.98H84.4712V11.49H92.5412V4.98H96.2912V21H92.5412V14.67H84.4712V21H80.7212V4.98Z" fill="black"/>
+<path d="M101.317 4.98H105.067V15.54L113.917 4.98H117.337V21H113.587V10.44L104.767 21H101.317V4.98Z" fill="black"/>
+</svg></a></div>
+            <div class="header-up__contacts">
+              <div class="contacts">
+                <div class="contacts__adress">
+                  Москва,
+                  Дмитровское шоссе, д 62 стр 5
+                </div>
+                <div class="contacts__phone"> 
+                  <div class="contacts__phone-number phone__number--black">+7 499 321-20-63 </div>
+                  <div class="contacts__phone-title">Заказать звонок</div>
+                </div>
+                <div class="contacts__operating-mode"> 
+                  <div class="contacts__operating-mode-time">9:00 - 20:00</div>
+                  <div class="contacts__operating-mode-title">ежедневно</div>
+                </div>
+              </div>
+              <div class="favorits">
+                <div class="favorits__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path class="brown" d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+                <div class="favorits__number"> <span class="number">3 </span></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav">
+            <div class="header-nav__menu">
+              <div class="header__burger">
+                <div class="burger">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <nav class="menu"> 
+                <ul class="menu__list"> 
+                  <li class="menu__item"><a class="menu__item-title" href="./weworks.html">Каталог </a></li>
+                  <li class="menu__item"><a class="menu__item-title" href="./feedback.html">Отзывы</a></li>
+                  <li class="menu__item"><a class="menu__item-title" href="./videopage.html">Видео</a></li>
+                  <li class="menu__item"><img src="/assets/images/telegram.svg" alt=""><a class="menu__item-title" href="#">Телеграм</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="buttons">
+              <div class="buttons__list"> 
+                <div class="buttons__item">
+                  <div class="buttons-main">
+                    <div class="buttons-main__img">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+<g clip-path="url(#clip0_1_1813)">
+<path class="white" d="M15.2002 8.32955V3.00226L10.0002 0L4.80011 3.00226V8.32959L0.186523 10.9932V16.9977L5.38659 20L10.0002 17.3364L14.6138 20L19.8138 16.9977V10.9932L15.2002 8.32955ZM4.80011 18.307L1.35945 16.3205V12.3476L4.80011 14.3341V18.307ZM1.94593 11.3318L5.38659 9.34537L8.82725 11.3318L5.38659 13.3183L1.94593 11.3318ZM9.41369 16.3205L5.97304 18.307V14.334L9.41369 12.3476V16.3205ZM9.41369 10.316L5.97304 8.32955V4.35663L9.41369 6.34307V10.316ZM6.55952 3.34085L10.0002 1.35441L13.4408 3.34085L10.0002 5.32729L6.55952 3.34085ZM14.0273 4.35663V8.32955L10.5866 10.316V6.34307L14.0273 4.35663ZM14.0273 18.307L10.5866 16.3205V12.3476L14.0273 14.3341V18.307ZM11.1731 11.3318L14.6138 9.34537L18.0544 11.3318L14.6138 13.3183L11.1731 11.3318ZM18.6409 16.3205L15.2002 18.307V14.334L18.6409 12.3476V16.3205Z" fill="#B17955"/>
+</g>
+<defs>
+<clipPath id="clip0_1_1813">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="buttons-main__title">Проект + Расчет</div>
+                  </div>
+                  <div class="buttons-main__under-button">5 вариантов за 5 минут</div>
+                </div>
+                <div class="buttons__item"> 
+                  <div class="buttons-main">
+                    <div class="buttons-main__img">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+<g clip-path="url(#clip0_1_46)" >
+<path class="white" d="M8.84049 0.000488281H2.59079C2.24561 0.000488281 1.96582 0.280279 1.96582 0.625458V19.3745C1.96582 19.7197 2.24561 19.9995 2.59079 19.9995H8.84049C9.18566 19.9995 9.46546 19.7197 9.46546 19.3745V0.625458C9.46546 0.280279 9.18562 0.000488281 8.84049 0.000488281ZM8.21552 18.7496H3.21576V16.8747H6.34061V15.6247H3.21576V13.7498H5.09067V12.4999H3.21576V10.625H6.34061V9.37503H3.21576V7.50012H5.09067V6.25018H3.21576V4.37527H6.34061V3.12534H3.21576V1.25043H8.21552V18.7496Z" fill="#B17955"/>
+<path class="white" d="M17.1524 15.8122L15.09 17.8684V2.13165L17.1462 4.1878L18.0274 3.3066L14.9025 0.181749C14.6588 -0.060583 14.2651 -0.060583 14.0213 0.181749L10.8965 3.3066L11.7777 4.1878L13.8401 2.13165V17.8684L11.7839 15.8122L10.9027 16.6934L14.0276 19.8183C14.2714 20.0606 14.665 20.0606 14.9088 19.8183L18.0336 16.6934L17.1524 15.8122Z" fill="#B17955"/>
+</g>
+<defs>
+<clipPath id="clip0_1_46">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                    </div>
+                    <div class="buttons-main__title"> <span class="desktop">Вызвать замерщика с образцами </span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="intro"> 
+      <div class="intro__inner"> 
+        <div class="intro__slider"> 
+          <div class="arrow arrow-left arrow left--pos"><img src="./assets/images/arrow.svg" alt=""></div>
+          <div class="viewport__sl " style="translate3d:(0px, 0px, 0px)">
+            <div class="slider"> 
+              <div class="slider__img"> <img src="./assets/images/headerslider.png" alt=""></div>
+              <div class="slider__content">
+                <div class="slider__content-box">
+                  <h1 class="slider__content-title">
+                    Кухни от производителя
+                    <span class="big">-40%</span> 
+                    На коллекции кухонь
+                  </h1><a class="slider__content-button" href="#">Выбрать </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider"> 
+              <div class="slider__img"> <img src="./assets/images/headerslider.png" alt=""></div>
+              <div class="slider__content">
+                <div class="slider__content-box">
+                  <h1 class="slider__content-title">
+                    Кухни от производителя
+                    <span class="big">-40%</span> 
+                    На коллекции кухонь
+                  </h1><a class="slider__content-button" href="#">Выбрать </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider"> 
+              <div class="slider__img"> <img src="./assets/images/headerslider.png" alt=""></div>
+              <div class="slider__content">
+                <div class="slider__content-box">
+                  <h1 class="slider__content-title">
+                    Кухни от производителя
+                    <span class="big">-40%</span> 
+                    На коллекции кухонь
+                  </h1><a class="slider__content-button" href="#">Выбрать </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow arrow-right arrow right--pos"><img src="./assets/images/arrow.svg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="portfus">
+      <div class="container"> 
+        <div class="portfus__inner"> 
+          <div class="portfus__title">Специально для Вас видео наших кухонь</div>
+          <div class="portfus-slider"> 
+            <div class="portfus-slider__viewer" style="transform:translate(0px)">
+              <div class="iframe"><iframe class="iframe__slider" src="https://www.youtube.com/embed/UpPZe8pQ6_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="iframe"><iframe class="iframe__slider" src="https://www.youtube.com/embed/UpPZe8pQ6_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="iframe"><iframe class="iframe__slider" src="https://www.youtube.com/embed/UpPZe8pQ6_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+          </div>
+          <div class="dots"> 
+            <div class="dots__nav"></div>
+            <div class="dots__nav"></div>
+            <div class="dots__nav"></div>
+          </div>
+          <div class="more-button"> <a class="more-button__btn" href="./videopage.html">Смотреть больше видео </a></div>
+        </div>
+      </div>
+    </section>
+    <section class="client-feedback">
+      <div class="container"> 
+        <div class="client-feedback__inner">   
+          <div class="client-feedback__title">Живые фотографии наших работ от реальных клиентов 🥰</div>
+          <div class="feedback__works-b"> 
+            <ul class="works__cards">
+              <li class="card__feedback"> 
+                <div class="slider__inner"> 
+                  <div class="feedback__slider">
+                    <div class="f__arrows-left f__arows--leftpos"> <img src="./assets/images/arrow.svg" alt=""/></div>
+                    <div class="feedback__track" style="transform: translate(0px)"><img class="slide" src="./assets/images/works1.png" alt=""/><img class="slide" src="./assets/images/works1.png" alt=""/><img class="slide" src="./assets/images/works1.png" alt=""/></div>
+                    <div class="f__arrows-right f__arows--rightpos"> <img src="./assets/images/arrow.svg" alt=""/></div>
+                    <div class="under__content-b"> 
+                      <ul class="under__hashtags"> 
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/youtube.svg" alt=""/></div>
+                          <div class="hashtags__title">Видеообзор</div>
+                        </li>
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/user1.svg" alt=""/></div>
+                          <div class="hashtags__title">Видеоотзыв</div>
+                        </li>
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/heart.svg" alt=""/></div>
+                        </li>
+                      </ul>
+                      <div class="hashtags__from-whon">*фото от сборщика</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback__content"> <a class="feedback__content-title" href="./citcheninfo.html"> Кухня Teramo</a>
+                  <div class="feedback__filter"> 
+                    <ul class="filter"> 
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">Массив дуба</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">Фрезеровка</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">7,2 м.п.</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="feedback__pricebtn-block">
+                    <div class="feedback__price-b"> 
+                      <div class="price__titlet" data-price="125 000"> 125 000 ₽</div>
+                      <div class="price__reduction">147 000 ₽</div>
+                    </div>
+                    <div class="feedback__button"> 
+                      <button class="buttons__f">Расчитать эту кухню</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="card__feedback"> 
+                <div class="slider__inner"> 
+                  <div class="feedback__slider">
+                    <div class="f__arrows-left f__arows--leftpos"> <img src="./assets/images/arrow.svg" alt=""/></div>
+                    <div class="feedback__track" style="transform: translate(0px)"><img class="slide" src="./assets/images/works2.png" alt=""/><img class="slide" src="./assets/images/works2.png" alt=""/><img class="slide" src="./assets/images/works2.png" alt=""/></div>
+                    <div class="f__arrows-right f__arows--rightpos"> <img src="./assets/images/arrow.svg" alt=""/></div>
+                    <div class="under__content-b"> 
+                      <ul class="under__hashtags"> 
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/youtube.svg" alt=""/></div>
+                          <div class="hashtags__title">Видеообзор</div>
+                        </li>
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/heart.svg" alt=""/></div>
+                        </li>
+                      </ul>
+                      <div class="hashtags__from-whon">*фото от сборщика</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback__content"> <a class="feedback__content-title" href="./citcheninfo.html"> Кухня Integrato</a>
+                  <div class="feedback__filter"> 
+                    <ul class="filter"> 
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">Cleanf + Эмаль</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">Система без ручек</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">4,2 м.п.</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="feedback__pricebtn-block">
+                    <div class="feedback__price-b"> 
+                      <div class="price__titlet" data-price="180 000"> 180 000 ₽</div>
+                      <div class="price__reduction">220 000 ₽</div>
+                    </div>
+                    <div class="feedback__button"> 
+                      <button class="buttons__f">Расчитать эту кухню</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="card__feedback"> 
+                <div class="slider__inner"> 
+                  <div class="feedback__slider">
+                    <div class="f__arrows-left f__arows--leftpos"> <img src="./assets/images/arrow.svg" alt=""/></div>
+                    <div class="feedback__track" style="transform: translate(0px)"><img class="slide" src="./assets/images/works3.png" alt=""/><img class="slide" src="./assets/images/works3.png" alt=""/><img class="slide" src="./assets/images/works3.png" alt=""/></div>
+                    <div class="f__arrows-right f__arows--rightpos"> <img src="./assets/images/arrow.svg" alt=""/></div>
+                    <div class="under__content-b"> 
+                      <ul class="under__hashtags"> 
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/youtube.svg" alt=""/></div>
+                          <div class="hashtags__title">Видеообзор</div>
+                        </li>
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/user1.svg" alt=""/></div>
+                          <div class="hashtags__title">Видеоотзыв</div>
+                        </li>
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/heart.svg" alt=""/></div>
+                        </li>
+                      </ul>
+                      <div class="hashtags__from-whon">*фото от сборщика</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback__content"> <a class="feedback__content-title" href="./citcheninfo.html"> Кухня Integrato</a>
+                  <div class="feedback__filter"> 
+                    <ul class="filter"> 
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">Пластик</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">Система без ручек</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">7,2 м.п.</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="feedback__pricebtn-block">
+                    <div class="feedback__price-b"> 
+                      <div class="price__titlet" data-price="270 000"> 270 000 ₽</div>
+                      <div class="price__reduction">357 000 ₽</div>
+                    </div>
+                    <div class="feedback__button"> 
+                      <button class="buttons__f">Расчитать эту кухню</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="card__feedback"> 
+                <div class="slider__inner"> 
+                  <div class="feedback__slider">
+                    <div class="f__arrows-left f__arows--leftpos"> <img src="./assets/images/arrow.svg" alt=""/></div>
+                    <div class="feedback__track" style="transform: translate(0px)"><img class="slide" src="./assets/images/works4.png" alt=""/><img class="slide" src="./assets/images/works4.png" alt=""/><img class="slide" src="./assets/images/works4.png" alt=""/></div>
+                    <div class="f__arrows-right f__arows--rightpos"> <img src="./assets/images/arrow.svg" alt=""/></div>
+                    <div class="under__content-b"> 
+                      <ul class="under__hashtags"> 
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/youtube.svg" alt=""/></div>
+                          <div class="hashtags__title">Видеообзор</div>
+                        </li>
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/user1.svg" alt=""/></div>
+                          <div class="hashtags__title">Видеоотзыв</div>
+                        </li>
+                        <li class="hashtags__item"> 
+                          <div class="hashtags__item-img"> <img src="./assets/images/heart.svg" alt=""/></div>
+                        </li>
+                      </ul>
+                      <div class="hashtags__from-whon">*фото от сборщика</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback__content"> <a class="feedback__content-title" href="./citcheninfo.html"> Кухня Integrato</a>
+                  <div class="feedback__filter"> 
+                    <ul class="filter"> 
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">Массив дуба</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">Система без ручек</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                      <li class="filter__item"> 
+                        <div class="filter__item-title">7,2 м.п.</div>
+                        <div class="filter__icon"> <img src="./assets/images/fedicon.svg" alt=""/></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="feedback__pricebtn-block">
+                    <div class="feedback__price-b"> 
+                      <div class="price__titlet" data-price="230 000"> 230 000 ₽</div>
+                      <div class="price__reduction">230 000 ₽</div>
+                    </div>
+                    <div class="feedback__button"> 
+                      <button class="buttons__f">Расчитать эту кухню</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="works-b"> 
+            <button class="works-b__button">Смотреть все работы</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__inner"> 
+          <div class="options__content-inner"> 
+            <div class="option__content">
+              <div class="option__content-title">
+                <div class="options__title">Стиль</div>
+                <div class="option__arrow"> <img src="./assets/images/arrow2.svg" alt=""></div>
+              </div>
+              <div class="choice__footer">
+                <ul class="options__choice"> 
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Классика</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Неоклассика</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Прованс</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Современный</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Скандинавский</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Лофт</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Барокко</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Минимализм</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="option__content">
+              <div class="option__content-title">
+                <div class="options__title">Фасад</div>
+                <div class="option__arrow"> <img src="./assets/images/arrow2.svg" alt=""></div>
+              </div>
+              <div class="choice__footer">
+                <ul class="options__choice"> 
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">МДФ</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Эмаль</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Пластик</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Массив дерева</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Акрил</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">ЛДСП</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Дуб</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Шпон</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="option__content">
+              <div class="option__content-title">
+                <div class="options__title">Форма кухни</div>
+                <div class="option__arrow"> <img src="./assets/images/arrow2.svg" alt=""></div>
+              </div>
+              <div class="choice__footer">
+                <ul class="options__choice"> 
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Прямые</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Г-образные</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">П-образные</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Угловые</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">С барной стойкой</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">С островом</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">С пеналом</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Нестандартные</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="option__content">
+              <div class="option__content-title">
+                <div class="options__title">Цвет</div>
+                <div class="option__arrow"> <img src="./assets/images/arrow2.svg" alt=""></div>
+              </div>
+              <div class="choice__footer">
+                <ul class="options__choice"> 
+                  <li class="choice__op-item color__block-flex"> 
+                    <div class="op__item-color">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<circle cx="8" cy="8.5" r="7.5" fill="white" stroke="#D9D9D9"/>
+</svg>
+                    </div><a class="op__item-link" href="#">Белые</a>
+                  </li>
+                  <li class="choice__op-item color__block-flex"> 
+                    <div class="op__item-color">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<circle cx="8" cy="8.5" r="7.5" fill="##D9D9D9" stroke="#D9D9D9"/>
+</svg>
+                    </div><a class="op__item-link" href="#">Серые</a>
+                  </li>
+                  <li class="choice__op-item color__block-flex"> 
+                    <div class="op__item-color">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<circle cx="8" cy="8.5" r="7.5" fill="#8E6148" stroke="#D9D9D9"/>
+</svg>
+                    </div><a class="op__item-link" href="#">Капучино</a>
+                  </li>
+                  <li class="choice__op-item color__block-flex"> 
+                    <div class="op__item-color">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<circle cx="8" cy="8.5" r="7.5" fill="#D6C4A3" stroke="#D9D9D9"/>
+</svg>
+                    </div><a class="op__item-link" href="#">Бежевые</a>
+                  </li>
+                  <li class="choice__op-item color__block-flex"> 
+                    <div class="op__item-color">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<circle cx="8" cy="8.5" r="7.5" fill="#9A967B" stroke="#D9D9D9"/>
+</svg>
+                    </div><a class="op__item-link" href="#">Оливковые</a>
+                  </li>
+                  <li class="choice__op-item color__block-flex"> 
+                    <div class="op__item-color">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<circle cx="8" cy="8.5" r="7.5" fill="#A3C6C7" stroke="#D9D9D9"/>
+</svg>
+                    </div><a class="op__item-link" href="#">Мятный</a>
+                  </li>
+                  <li class="choice__op-item color__block-flex"> 
+                    <div class="op__item-color">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<circle cx="8" cy="8.5" r="7.5" fill="#212121" stroke="#D9D9D9"/>
+</svg> 
+                    </div><a class="op__item-link" href="#">Черные</a>
+                  </li>
+                  <li class="choice__op-item color__block-flex"> 
+                    <div class="op__item-color">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<circle cx="8" cy="8.5" r="7.5" fill="#643120" stroke="#D9D9D9"/>
+</svg>
+                    </div><a class="op__item-link" href="#">Коричневые</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="option__content">
+              <div class="option__content-title">
+                <div class="options__title">Размер кухни</div>
+                <div class="option__arrow"> <img src="./assets/images/arrow2.svg" alt=""></div>
+              </div>
+              <div class="choice__footer">
+                <ul class="options__choice">
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Небольшие кухни</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Кухни 4 метра</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Кухни 5 метра</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Кухни 6 метра</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Кухни 8 метра</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Кухни 10 метра</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Кухни 12 метра</a></li>
+                  <li class="choice__op-item"> <a class="op__item-link" href="#">Кухни 14 метра</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__information"> 
+            <div class="footer__information-contacts">
+              <div class="footer__information-logo">
+                <div class="logo"> <img src="./assets/images/footericon.svg" alt=""></div>
+                <div class="logo-social"><img src="./assets/images/vk-new.svg" alt=""><img src="./assets/images/telegramwhite.svg" alt=""></div>
+              </div>
+              <div class="contacts">
+                <div class="contacts__adress contacts--white">
+                  Москва,
+                  Дмитровское шоссе, д 62 стр 5
+                </div>
+                <div class="contacts__phone"> 
+                  <div class="contacts__phone-number contacts--white">+7 499 321-20-63 </div>
+                  <div class="contacts__phone-title">Заказать звонок</div>
+                </div>
+                <div class="contacts__operating-mode"> 
+                  <div class="contacts__operating-mode-time contacts--white">9:00 - 20:00</div>
+                  <div class="contacts__operating-mode-title contacts--white">ежедневно</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__navigation">
+              <div class="footer__nav">
+                <ul class="menu__list menu__list--row">
+                  <li class="menu__item menu__item--ml10"> <a class="nav__link" href="/weworks.html">Каталог</a></li>
+                  <li class="menu__item menu__item--ml10"> <a class="nav__link" href="/feedback.html">Отзывы</a></li>
+                  <li class="menu__item menu__item--ml10"> <a class="nav__link" href="/videopage.html">Видео</a></li>
+                </ul>
+              </div>
+              <div class="footer__buttons"> 
+                <div class="buttons__list buttons__list--wrap"> 
+                  <div class="buttons__item buttons__list-item--f bg--white"> 
+                    <div class="buttons-main">
+                      <div class="buttons-main__img">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+<g clip-path="url(#clip0_1_1813)">
+<path class="white" d="M15.2002 8.32955V3.00226L10.0002 0L4.80011 3.00226V8.32959L0.186523 10.9932V16.9977L5.38659 20L10.0002 17.3364L14.6138 20L19.8138 16.9977V10.9932L15.2002 8.32955ZM4.80011 18.307L1.35945 16.3205V12.3476L4.80011 14.3341V18.307ZM1.94593 11.3318L5.38659 9.34537L8.82725 11.3318L5.38659 13.3183L1.94593 11.3318ZM9.41369 16.3205L5.97304 18.307V14.334L9.41369 12.3476V16.3205ZM9.41369 10.316L5.97304 8.32955V4.35663L9.41369 6.34307V10.316ZM6.55952 3.34085L10.0002 1.35441L13.4408 3.34085L10.0002 5.32729L6.55952 3.34085ZM14.0273 4.35663V8.32955L10.5866 10.316V6.34307L14.0273 4.35663ZM14.0273 18.307L10.5866 16.3205V12.3476L14.0273 14.3341V18.307ZM11.1731 11.3318L14.6138 9.34537L18.0544 11.3318L14.6138 13.3183L11.1731 11.3318ZM18.6409 16.3205L15.2002 18.307V14.334L18.6409 12.3476V16.3205Z" fill="#B17955"/>
+</g>
+<defs>
+<clipPath id="clip0_1_1813">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                      </div>
+                      <div class="buttons-main__title">Проект + Расчет</div>
+                    </div>
+                    <div class="buttons-main__under-button">5 вариантов за 5 минут</div>
+                  </div>
+                  <div class="buttons__item buttons__list-item--f bg--white mt-20"> 
+                    <div class="buttons-main">
+                      <div class="buttons-main__img">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+<g clip-path="url(#clip0_1_46)" >
+<path class="white" d="M8.84049 0.000488281H2.59079C2.24561 0.000488281 1.96582 0.280279 1.96582 0.625458V19.3745C1.96582 19.7197 2.24561 19.9995 2.59079 19.9995H8.84049C9.18566 19.9995 9.46546 19.7197 9.46546 19.3745V0.625458C9.46546 0.280279 9.18562 0.000488281 8.84049 0.000488281ZM8.21552 18.7496H3.21576V16.8747H6.34061V15.6247H3.21576V13.7498H5.09067V12.4999H3.21576V10.625H6.34061V9.37503H3.21576V7.50012H5.09067V6.25018H3.21576V4.37527H6.34061V3.12534H3.21576V1.25043H8.21552V18.7496Z" fill="#B17955"/>
+<path class="white" d="M17.1524 15.8122L15.09 17.8684V2.13165L17.1462 4.1878L18.0274 3.3066L14.9025 0.181749C14.6588 -0.060583 14.2651 -0.060583 14.0213 0.181749L10.8965 3.3066L11.7777 4.1878L13.8401 2.13165V17.8684L11.7839 15.8122L10.9027 16.6934L14.0276 19.8183C14.2714 20.0606 14.665 20.0606 14.9088 19.8183L18.0336 16.6934L17.1524 15.8122Z" fill="#B17955"/>
+</g>
+<defs>
+<clipPath id="clip0_1_46">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                      </div>
+                      <div class="buttons-main__title">Вызвать замерщика с образцами </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__copyright">© 2022 Аната-Кухни. Все ресурсы сайта www.anata-kitchen.ru, включая (но не ограничиваясь) текстовую, графическую, фотографическую и видео информацию, структуру, дизайн и оформление страниц, товарные знаки, доменное имя, фирменное наименование являются объектами авторского права и прав на интеллектуальную собственность, защищены российским законодательством и международными соглашениями об охране авторских прав и интеллектуальной собственности.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./assets/js/fixedscripts.min.js"> </script>
+    <script type="text/javascript" src="./assets/js/routerpages.min.js"> </script>
+  </body>
+</html>
